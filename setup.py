@@ -116,6 +116,7 @@ def reqs(*f):
         ) if r]
 
 install_requires = reqs('default.txt')
+install_requires.append('amqp')
 if py_version[0:2] == (2, 6):
     install_requires.extend(reqs('py26.txt'))
 
@@ -159,6 +160,9 @@ setup(
     zip_safe=False,
     test_suite='nose.collector',
     install_requires=install_requires,
+    dependency_links = [
+        'git+ssh://git@github.com/aleperno/py-amqp.git@overflow-patch#egg=amqp'
+    ],
     tests_require=tests_require,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
