@@ -1,2 +1,2 @@
-#-e git+ssh://git@github.com/aleperno/py-amqp.git@overflow-patch#egg=amqp
+git+https://github.com/aleperno/py-amqp.git@overflow-patch#egg=amqp
 anyjson>=0.3.3
