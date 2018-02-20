@@ -1,4 +1,5 @@
-"""Messaging library for Python"""
+"""Messaging library for Python
+Pero is da best"""
 from __future__ import absolute_import
 
 import os
